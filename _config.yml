@@ -1,0 +1,26 @@
+# Site settings
+title: Sykes Land
+header-img: img/home-bg.jpg
+email: sykesland@yahoo.com
+copyright_name: Steve Sykes
+description: "Wind rights, solar rights, renewable energy, land and land management."
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username:
+github_username:
+facebook_username:
+email_username:  steve@sykesland.com
+phone_number: 806-679-2645
+map_location: 301 S. Polk, Suite 510 Amarillo, TX 79101
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+google_tracking_id: UA-1601268-16
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "LICENSE"]
+
+gems: [jekyll-paginate, jekyll-feed]

@@ -1,0 +1,103 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    {% if site.twitter_username %}
+                    <li>
+                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.facebook_username %}
+                    <li>
+                        <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.github_username %}
+                    <li>
+                        <a href="https://github.com/{{ site.github_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.map_location %}
+                    <li>
+                        <a href="http://maps.google.com/?q={{ site.map_location }}" title="{{ site.map_location }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.phone_number %}
+                    <li>
+                        <a href="tel:{{ site.phone_number }}" title="call me at: {{ site.phone_number }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.email_username %}
+                    <li>
+                        <a href="mailto:{{ site.email_username }}" title="email me at: {{ site.email_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                  <div class="row">
+                    <div class="col-lg-5 col-md-5">
+                      <p class="iabs text-muted"><a target="_blank" href="https://tinyurl.com/SteveSykesIABS">Texas Real Estate Commision Information About Brokerage Services</a></p>
+                      <p class="iabs text-muted"><a target="_blank" href="https://www.trec.texas.gov/pdf/forms/Miscellaneous/CN1-2.pdf">Texas Real Estate Commission Consumer Protection Notice</a></p>
+                    </div>
+
+                    <div class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2">
+                      <p class="credentials text-muted">
+                        Supervising Broker:</br>
+                        Tom Horton</br>
+                        Ag Brokers Ltd.</br>
+                        <a href="tel:806.206.6431">806.206.6431</a></br>
+                        <a href="mailto:tomh@agbrokersltd.com">tomh@agbrokersltd.com</a></br>
+                        TREC Lic. # 522829</br>
+                      </p>
+                      <p class="credentials text-muted">
+                        Steve Sykes, Sales Agent</br>
+                        <a href="tel:{{ site.phone_number }}">{{ site.phone_number }}</a></br>
+                        <a href="mailto:{{ site.email_username }}">{{ site.email_username }}</a></br>
+                        TREC Lic. # 665628</br>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
